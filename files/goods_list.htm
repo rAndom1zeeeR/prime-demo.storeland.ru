@@ -152,7 +152,7 @@
               </div>
               <div class="product__shop {% IF goods.IS_HAS_IN_COMPARE_LIST || goods.IS_HAS_IN_FAVORITES_LIST %}added{% ENDIF %}">
                 <meta itemprop="description" content="{% IF goods.DESCRIPTION_SHORT %}{goods.DESCRIPTION_SHORT}{% ELSE %}Описание отсутствует{% ENDIF %}">
-                <div class="product__name"><a href="{goods.URL_MIN_PRICE_NOW | url_amp}" title="{goods.NAME}" itemprop="name">{goods.NAME}</a></div>
+                <div class="product__name"><a href="{goods.URL_MIN_PRICE_NOW | url_amp}" title="{goods.NAME}"><span itemprop="name">{goods.NAME}</span></a></div>
                 <!-- Цена -->
                 <div class="product__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                   <meta itemprop="priceCurrency" content="{CURRENCY_CHAR_CODE}"/>
@@ -301,9 +301,7 @@
                 {% ENDIF %}
               </div>
               <div class="product__shop {% IF goods.IS_HAS_IN_COMPARE_LIST || goods.IS_HAS_IN_FAVORITES_LIST %}added{% ENDIF %}">
-                <div class="product__name">
-                  <a href="{goods.URL_MIN_PRICE_NOW | url_amp}" title="{goods.NAME}" itemprop="name">{goods.NAME}</a>
-                </div>
+                <div class="product__name"><a href="{goods.URL_MIN_PRICE_NOW | url_amp}" title="{goods.NAME}"><span itemprop="name">{goods.NAME}</span></a></div>
                 <!-- Цена -->
                 <div class="product__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                   <meta itemprop="priceCurrency" content="{CURRENCY_CHAR_CODE}"/>

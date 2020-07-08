@@ -1,6 +1,6 @@
 <!-- Форма карточки товара -->
-<div class="productViewBlock">
-<div class="productView {% IF GOODS_MOD_REST_VALUE=0 %}empty{% ENDIF %}" itemscope itemtype="https://schema.org/Product">
+<div class="productViewBlock" itemscope itemtype="https://schema.org/Product">
+<div class="productView {% IF GOODS_MOD_REST_VALUE=0 %}empty{% ENDIF %}">
   <!-- Изображение товара  {% IF GOODS_IMAGE_ID = goods_images.ID %}style="display: none;"{% ENDIF %} -->
   <div class="productView__imageBox">
     <div class="productView__image" data-id="{GOODS_IMAGE_ID}">
@@ -259,7 +259,6 @@
     </form>
   </div>
 </div>
-</div>
 <!-- /END Форма карточки товара -->
 <!-- Табы Описание, Хар-ки, Доставка, Отзывы -->
 <div class="productView__tabs">
@@ -478,6 +477,7 @@
     {% ENDIF %}
   </div>
 </div>
+</div>
 <!--  -->
 <div class="related">
   <!-- Сопутствующие товары -->
@@ -524,7 +524,7 @@
             </div>
             <div class="product__shop {% IF related_goods.IS_HAS_IN_COMPARE_LIST || related_goods.IS_HAS_IN_FAVORITES_LIST %}added{% ENDIF %}">
               <meta itemprop="description" content="{% IF related_goods.DESCRIPTION_SHORT %}{related_goods.DESCRIPTION_SHORT}{% ELSE %}Описание отсутствует{% ENDIF %}">
-              <div class="product__name"><a href="{related_goods.URL_MIN_PRICE_NOW | url_amp}" title="{related_goods.NAME}" itemprop="name">{related_goods.NAME}</a></div>
+              <div class="product__name"><a href="{related_goods.URL_MIN_PRICE_NOW | url_amp}" title="{related_goods.NAME}"><span itemprop="name">{related_goods.NAME}</span></a></div>
               <!-- Цена -->
               <div class="product__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                 <meta itemprop="priceCurrency" content="{CURRENCY_CHAR_CODE}"/>
@@ -693,7 +693,7 @@
             </div>
             <div class="product__shop {% IF related_views_goods.IS_HAS_IN_COMPARE_LIST || related_views_goods.IS_HAS_IN_FAVORITES_LIST %}added{% ENDIF %}">
               <meta itemprop="description" content="{% IF related_views_goods.DESCRIPTION_SHORT %}{related_views_goods.DESCRIPTION_SHORT}{% ELSE %}Описание отсутствует{% ENDIF %}">
-              <div class="product__name"><a href="{related_views_goods.URL_MIN_PRICE_NOW | url_amp}" title="{related_views_goods.NAME}" itemprop="name">{related_views_goods.NAME}</a></div>
+              <div class="product__name"><a href="{related_views_goods.URL_MIN_PRICE_NOW | url_amp}" title="{related_views_goods.NAME}"><span itemprop="name">{related_views_goods.NAME}</span></a></div>
               <!-- Цена -->
               <div class="product__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                 <meta itemprop="priceCurrency" content="{CURRENCY_CHAR_CODE}"/>
