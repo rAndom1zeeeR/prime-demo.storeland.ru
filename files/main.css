@@ -568,6 +568,17 @@ footer .social__links a {display: block;width: 30px;height: 30px;line-height: 30
 footer .social__links a:hover {color: #55c9da;}
 footer .social__links a:last-child {margin-right: 0;}
 footer .social__links a span {display: none;}
+/* Способы оплаты */
+.footer__bottom .inner {align-items: center;}
+footer .copyright {width: 60%;}
+footer .payments {width: 40%;text-align: right;}
+footer .payments i {font-size: 1.25rem;margin: 0.5rem;display: inline-block;color: #FFFFFF;opacity: 0.5;}
+footer .payments i:hover {opacity: 1;}
+@media all and (max-width: 991px) {
+footer .copyright {width: 100%;text-align: center;}
+footer .payments {width: 100%;margin-top: 1rem;text-align: center;}
+}
+
 /* Наверх */
 .toTop {display: flex;align-items: center;justify-content: center;position: absolute;top: -35px;left: calc(50% - 35px);width: 70px;height: 70px;background: #55c9da;transform: rotate(45deg);cursor: pointer;}
 .toTop:hover {background: #2b2b2c;}
