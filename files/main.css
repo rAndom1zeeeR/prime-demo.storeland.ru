@@ -563,7 +563,7 @@ footer .inner {align-items: flex-start;}
 .footer__contacts .phone + .phone i {opacity: 0;}
 .footer__contacts .phone {margin-top: 4px;}
 /* Соц сети */
-footer .social__links {margin-bottom: 20px;display: flex;align-items: center;flex-flow: row wrap;}
+footer .social__links {display: flex;align-items: center;flex-flow: row wrap;}
 footer .social__links a {display: block;width: 30px;height: 30px;line-height: 30px;color: #fff;margin: 0 10px 10px 0;font-size: 24px;text-align: center;}
 footer .social__links a:hover {color: #55c9da;}
 footer .social__links a:last-child {margin-right: 0;}
